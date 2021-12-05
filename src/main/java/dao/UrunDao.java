@@ -1,26 +1,16 @@
 package dao;
 
+import base.BaseDao;
 import entity.Urun;
-import hibernate.HibernateUtil;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 
 import java.util.List;
 
-public class UrunDao {
-
-    private SessionFactory sessionFactory;
-
-    public UrunDao() {
-        sessionFactory = HibernateUtil.getSessionFactory();
-    }
+public class UrunDao extends BaseDao {
 
     public List<Urun> findAll(){
 
-        Session session = sessionFactory.openSession();
-
-        Query query = session.createQuery("select urun from Urun urun");
+        Query query = getCurrentSession().createQuery("select urun from Urun urun");
 
         return query.list();
     }

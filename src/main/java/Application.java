@@ -1,10 +1,10 @@
-import dao.KategoriDao;
+import entityservice.KategoriEntityService;
 
 public class Application {
 
     public static void main(String[] args) {
 
-        KategoriDao kategoriDao = new KategoriDao();
-        kategoriDao.findAll();
+        KategoriEntityService service = new KategoriEntityService();
+        service.findAll();
     }
 }

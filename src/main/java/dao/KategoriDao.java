@@ -11,9 +11,7 @@ public class KategoriDao extends BaseDao {
 
     public List<Kategori> findAll(){
 
-        Session session = sessionFactory.openSession();
-
-        Query query = session.createQuery("select kategori from Kategori kategori");
+        Query query = getCurrentSession().createQuery("select kategori from Kategori kategori");
 
         return query.list();
     }
