@@ -78,4 +78,15 @@ public class Urun {
     public void setKategori(Kategori kategori) {
         this.kategori = kategori;
     }
+
+    @Override
+    public String toString() {
+        return "Urun{" +
+                "id=" + id +
+                ", adi='" + adi + '\'' +
+                ", fiyat=" + fiyat +
+                ", kayitTarihi=" + kayitTarihi +
+                ", kategori=" + kategori +
+                '}';
+    }
 }
