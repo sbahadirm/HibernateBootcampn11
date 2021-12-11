@@ -5,9 +5,9 @@
     http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="urunDao" class="com.bahadirmemis.dao.UrunDao"></bean>
+    <bean id="urunDao" class="com.bahadirmemis.dao.UrunDao" scope="singleton"></bean>
 
-    <bean id="urunEntityService" class="com.bahadirmemis.entityservice.UrunEntityService">
+    <bean id="urunEntityService" class="com.bahadirmemis.entityservice.UrunEntityService" scope="singleton">
         <constructor-arg name="urunDao" ref="urunDao"> </constructor-arg>
     </bean>
 </beans>

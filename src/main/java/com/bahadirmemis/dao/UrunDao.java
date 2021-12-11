@@ -14,7 +14,6 @@ import java.math.BigDecimal;
 import java.util.List;
 
 @Repository
-@Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class UrunDao extends BaseDao {
 
     public List<Urun> findAll(){

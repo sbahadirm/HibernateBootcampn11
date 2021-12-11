@@ -14,11 +14,14 @@ import java.math.BigDecimal;
 import java.util.List;
 
 @Service
-@Scope(value = ConfigurableBeanFactory.SCOPE_SINGLETON)
 public class UrunEntityService {
 
     @Autowired
     private UrunDao urunDao;
+
+    public UrunEntityService(UrunDao urunDao) {
+        this.urunDao = urunDao;
+    }
 
     public UrunDao getUrunDao() {
         return urunDao;
