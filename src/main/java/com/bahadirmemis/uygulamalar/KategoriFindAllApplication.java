@@ -1,11 +1,11 @@
-package com.bahadirmemis;
+package com.bahadirmemis.uygulamalar;
 
 import com.bahadirmemis.entity.Kategori;
 import com.bahadirmemis.entityservice.KategoriEntityService;
 
 import java.util.List;
 
-public class Application {
+public class KategoriFindAllApplication {
 
     public static void main(String[] args) {
 
