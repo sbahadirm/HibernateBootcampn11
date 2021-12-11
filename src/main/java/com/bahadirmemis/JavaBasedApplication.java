@@ -9,11 +9,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class SpringCoreApplication {
+public class JavaBasedApplication {
 
     public static void main(String[] args) {
 
-        ApplicationContext context = new AnnotationConfigApplicationContext(SpringCoreApplication.class);
+        ApplicationContext context = new AnnotationConfigApplicationContext(JavaBasedApplication.class);
 
         Service service = context.getBean(Service.class);
         service.test();

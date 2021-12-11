@@ -3,16 +3,25 @@ package com.bahadirmemis.entityservice;
 import com.bahadirmemis.dao.UrunDao;
 import com.bahadirmemis.dto.UrunDetayDto;
 import com.bahadirmemis.entity.Urun;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
+import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.ScopedProxyMode;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.util.List;
 
+@Service
+@Scope(value = ConfigurableBeanFactory.SCOPE_SINGLETON)
 public class UrunEntityService {
 
+    @Autowired
     private UrunDao urunDao;
 
-    public UrunEntityService() {
-        urunDao = new UrunDao();
+    public UrunDao getUrunDao() {
+        return urunDao;
     }
 
     public List<Urun> findAll(){

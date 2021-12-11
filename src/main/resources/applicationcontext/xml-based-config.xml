@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+    http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="urunDao" class="com.bahadirmemis.dao.UrunDao"></bean>
+
+    <bean id="urunEntityService" class="com.bahadirmemis.entityservice.UrunEntityService">
+        <constructor-arg name="urunDao" ref="urunDao"> </constructor-arg>
+    </bean>
+</beans>
