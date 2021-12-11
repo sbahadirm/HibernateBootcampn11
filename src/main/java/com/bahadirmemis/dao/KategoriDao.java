@@ -1,8 +1,7 @@
-package dao;
+package com.bahadirmemis.dao;
 
-import base.BaseDao;
-import entity.Kategori;
-import org.hibernate.Session;
+import com.bahadirmemis.base.BaseDao;
+import com.bahadirmemis.entity.Kategori;
 import org.hibernate.query.Query;
 
 import java.util.List;

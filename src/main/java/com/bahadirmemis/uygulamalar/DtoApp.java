@@ -1,8 +1,7 @@
-package uygulamalar;
+package com.bahadirmemis.uygulamalar;
 
-import dto.UrunDetayDto;
-import entity.Urun;
-import entityservice.UrunEntityService;
+import com.bahadirmemis.dto.UrunDetayDto;
+import com.bahadirmemis.entityservice.UrunEntityService;
 
 import java.util.List;
 

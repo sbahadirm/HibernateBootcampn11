@@ -1,7 +1,7 @@
-package uygulamalar;
+package com.bahadirmemis.uygulamalar;
 
-import entity.Urun;
-import entityservice.UrunEntityService;
+import com.bahadirmemis.entity.Urun;
+import com.bahadirmemis.entityservice.UrunEntityService;
 
 public class FindByIdApp {
 

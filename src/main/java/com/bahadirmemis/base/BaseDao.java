@@ -1,6 +1,6 @@
-package base;
+package com.bahadirmemis.base;
 
-import hibernate.HibernateUtil;
+import com.bahadirmemis.hibernate.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 

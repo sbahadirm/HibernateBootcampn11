@@ -1,4 +1,4 @@
-package entity;
+package com.bahadirmemis.entity;
 
 import javax.persistence.*;
 import java.math.BigDecimal;

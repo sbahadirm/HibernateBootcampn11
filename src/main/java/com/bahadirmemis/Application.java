@@ -1,5 +1,7 @@
-import entity.Kategori;
-import entityservice.KategoriEntityService;
+package com.bahadirmemis;
+
+import com.bahadirmemis.entity.Kategori;
+import com.bahadirmemis.entityservice.KategoriEntityService;
 
 import java.util.List;
 

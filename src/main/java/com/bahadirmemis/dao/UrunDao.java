@@ -1,8 +1,8 @@
-package dao;
+package com.bahadirmemis.dao;
 
-import base.BaseDao;
-import dto.UrunDetayDto;
-import entity.Urun;
+import com.bahadirmemis.base.BaseDao;
+import com.bahadirmemis.dto.UrunDetayDto;
+import com.bahadirmemis.entity.Urun;
 import org.hibernate.query.Query;
 
 import java.math.BigDecimal;

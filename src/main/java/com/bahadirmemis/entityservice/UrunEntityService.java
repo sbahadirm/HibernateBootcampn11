@@ -1,8 +1,8 @@
-package entityservice;
+package com.bahadirmemis.entityservice;
 
-import dao.UrunDao;
-import dto.UrunDetayDto;
-import entity.Urun;
+import com.bahadirmemis.dao.UrunDao;
+import com.bahadirmemis.dto.UrunDetayDto;
+import com.bahadirmemis.entity.Urun;
 
 import java.math.BigDecimal;
 import java.util.List;

@@ -1,6 +1,5 @@
-package hibernate;
+package com.bahadirmemis.hibernate;
 
-import entity.Kategori;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 

@@ -1,4 +1,4 @@
-package dto;
+package com.bahadirmemis.dto;
 
 import java.math.BigDecimal;
 

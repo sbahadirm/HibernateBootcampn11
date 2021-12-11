@@ -21,9 +21,9 @@
         <!-- Update database on startup -->
         <property name="hibernate.hbm2ddl.auto">update</property>
 
-        <!-- Annotated entity classes -->
-        <mapping class="entity.Kategori"/>
-        <mapping class="entity.Urun"/>
+        <!-- Annotated com.bahadirmemis.entity classes -->
+        <mapping class="com.bahadirmemis.entity.Kategori"/>
+        <mapping class="com.bahadirmemis.entity.Urun"/>
 
     </session-factory>
 </hibernate-configuration>

@@ -1,7 +1,7 @@
-package entityservice;
+package com.bahadirmemis.entityservice;
 
-import dao.KategoriDao;
-import entity.Kategori;
+import com.bahadirmemis.dao.KategoriDao;
+import com.bahadirmemis.entity.Kategori;
 
 import java.util.List;
 
